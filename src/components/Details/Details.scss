@@ -1,0 +1,18 @@
+.details {
+	display: flex;
+	padding: 10px;
+	color: white;
+
+	.data {
+		flex-direction: column;
+		padding-left: 20px;
+	}
+
+	.button-left {
+		margin-right: 20px;
+	}
+
+	.button-right {
+		margin-left: 20px;
+	}
+}

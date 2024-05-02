@@ -1,0 +1,19 @@
+.movieColumn {
+	display: flex;
+	color: white;
+	flex-direction: column;
+	text-align: center;
+
+	img {
+		align-self: center;
+	}
+}
+
+.button {
+	margin: 5px;
+	display: inline-block;
+}
+
+.MuiGrid-container {
+	padding-top: 30px;
+}
