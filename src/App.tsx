@@ -29,8 +29,8 @@ function MenuLayout() {
       <div className='navBar'>
         <h1>Movies Galore!</h1>
         <Tabs value={activeTab} onChange={handleTabChange}>
-          <Tab disableRipple={true} label='search' to='/' component={Link} />
-          <Tab disableRipple={true} label='gallery' to='/gallery' component={Link} />
+          <Tab disableRipple={true} label='search' to='/movies-galore' component={Link} />
+          <Tab disableRipple={true} label='gallery' to='/movies-galore/gallery' component={Link} />
         </Tabs>
       </div>
       
@@ -47,7 +47,7 @@ function NoMatch() {
 		<div>
 			<h2>This is not the page you were looking for</h2>
 			<p>
-				<Link to="/">Go back to the home page</Link>
+				<Link to="/movies-galore">Go back to the home page</Link>
 			</p>
 		</div>
 	);
@@ -59,10 +59,10 @@ export default function App() {
       <CssBaseline />
       <Router>
         <Routes>
-          <Route path="/" element={<MenuLayout />}>
+          <Route path="/movies-galore" element={<MenuLayout />}>
             <Route index element={<Home />} />
-            <Route path="gallery" element={<Gallery />} />
-            <Route path='details' element={<Details />} />
+            <Route path="/movies-galore/gallery" element={<Gallery />} />
+            <Route path='/movies-galore/details' element={<Details />} />
             <Route path='*' element={<NoMatch />} />
           </Route>
         </Routes>

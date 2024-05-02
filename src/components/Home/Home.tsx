@@ -76,7 +76,7 @@ export default function Home() {
 			<Grid item xs={12}>
 				<Link className='movieRow'
 					key = {movie.id}
-					to = '/details'
+					to = '/movies-galore/details'
 					state = {{
 						movies: movies,
 						current_movie: movie.id

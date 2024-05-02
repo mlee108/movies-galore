@@ -62,7 +62,7 @@ export default function Gallery() {
 				<Grid item xs={1}>
 					<Link className='movieColumn'
 						key={movies[i].id}
-						to='/details'
+						to='/movies-galore/details'
 						state={{
 							movies: movies,
 							current_movie: movies[i].id
