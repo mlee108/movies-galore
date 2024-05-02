@@ -2,8 +2,8 @@ import { useState } from 'react'
 import { BrowserRouter as Router, Link, Outlet, Route, Routes} from 'react-router-dom'
 import Tab from '@mui/material/Tab'
 import Tabs from '@mui/material/Tabs'
-import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
 
 import './App.css'
 
