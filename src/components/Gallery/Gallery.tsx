@@ -78,10 +78,10 @@ export default function Gallery() {
 		return retVal;
 	}
 
-	function renderButtons(genre: any) {
+	function renderButtons(buttonGenre: any) {
 		return (
 			<div className='button'>
-				<Button variant='contained' onClick={(e) => handleButtonClick(e, genre.id)}>{genre.name}</Button>
+				<Button variant='contained' onClick={(e) => handleButtonClick(e, buttonGenre.id)} color={genre == buttonGenre.id ? 'secondary' : 'primary'}>{buttonGenre.name}</Button>
 			</div>
 		)
 	}
